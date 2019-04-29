@@ -3,6 +3,8 @@ optional
 
 `Source code <https://github.com/TartanLlama/optional/blob/master/tl/optional.hpp>`_
 
+C++11/14/17 `std::optional` with functional-style extensions and reference support.
+
 tl::optional
 ------------
 
