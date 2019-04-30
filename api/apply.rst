@@ -5,8 +5,8 @@ apply
 
 A C++11 implementation of C++17's `std::apply <https://en.cppreference.com/w/cpp/utility/apply>`_.
 
-.. cpp:function:: template <class F, class Tuple>\
-                  auto tl::apply(F&& f, Tuple&& tuple)
+.. function:: template <class F, class Tuple>\
+              auto tl::apply(F&& f, Tuple&& tuple)
 
     Calls `f` with the contents of `tuple` as arguments.
 

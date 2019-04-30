@@ -5,19 +5,19 @@ numeric_aliases
 
 Rust-style numeric aliases.
 
-.. cpp:type:: i8 = std::int8_t
-.. cpp:type:: i16 = std::int16_t
-.. cpp:type:: i32 = std::int32_t
-.. cpp:type:: i64 = std::int64_t
-.. cpp:type:: u8 = std::uint8_t
-.. cpp:type:: u16 = std::uint16_t
-.. cpp:type:: u32 = std::uint32_t
-.. cpp:type:: u64 = std::uint64_t
-.. cpp:type:: uchar = unsigned char
-.. cpp:type:: ushort = unsigned short
-.. cpp:type:: uint = unsigned int
-.. cpp:type:: ulong = unsigned long
-.. cpp:type:: ullong = unsigned long long
-.. cpp:type:: llong = long long
-.. cpp:type:: ldouble = long double
-.. cpp:type:: usize = std::size_t
+.. type:: i8 = std::int8_t
+.. type:: i16 = std::int16_t
+.. type:: i32 = std::int32_t
+.. type:: i64 = std::int64_t
+.. type:: u8 = std::uint8_t
+.. type:: u16 = std::uint16_t
+.. type:: u32 = std::uint32_t
+.. type:: u64 = std::uint64_t
+.. type:: uchar = unsigned char
+.. type:: ushort = unsigned short
+.. type:: uint = unsigned int
+.. type:: ulong = unsigned long
+.. type:: ullong = unsigned long long
+.. type:: llong = long long
+.. type:: ldouble = long double
+.. type:: usize = std::size_t

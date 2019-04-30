@@ -5,7 +5,7 @@ dependent_false
 
 A `static_assert` helper.
 
-.. cpp:struct:: template<class T> tl::dependent_false : std::false_type
+.. struct:: template<class T> tl::dependent_false : std::false_type
 
     Always false, but dependent on a template parameter, so can be used
     in `static_asserts` which you want to always fail.

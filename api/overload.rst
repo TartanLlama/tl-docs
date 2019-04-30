@@ -15,7 +15,7 @@ Used for in-place visitation of `std::variant`: ::
     );
     visit(do_something, my_variant);
 
-.. cpp:function:: template <class... Fs> auto overload(Fs&&... fs)
+.. function:: template <class... Fs> auto tl::overload(Fs&&... fs)
 
     Create a single function object with a call operator overloaded by
     all function objects in `fs...`.
