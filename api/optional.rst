@@ -5,7 +5,7 @@ optional
 
 C++11/14/17 `std::optional` with functional-style extensions and reference support.
 
-tl::optional
+`tl::optional`
 ------------
 
 .. class:: tl::optional
@@ -255,7 +255,7 @@ tl::optional
 
   *noexcept* if lhs.swap(rhs) is noexcept
 
-tl::optional<T&>
+`tl::optional<T&>`
 ----------------
 
 .. class:: template<class T> tl::optional<T&>
