@@ -3,6 +3,8 @@ expected
 
 `Source code <https://github.com/TartanLlama/expected/blob/master/tl/expected.hpp>`_
 
+C++11/14/17 `std::expected <https://wg21.link/p0323r3>`_ with functional-style extensions and reference support.
+
 `tl::expected`
 --------------
 
