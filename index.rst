@@ -8,6 +8,13 @@ About
 Some parts are backports of more recent standard library features to C++11 (e.g. :doc:`api/integer_sequence`), some are extensions of existing
 standard library components (e.g. :doc:`api/optional`), others are handy utilites (e.g. :doc:`api/overload`).
 
+Index
+-----
+
+.. toctree::
+
+  api/index
+
 Getting the Code
 ----------------
 
@@ -18,13 +25,6 @@ and discovery:
 - `expected <https://github.com/TartanLlama/expected>`_
 - `function_ref <https://github.com/TartanLlama/function_ref>`_
 - `Miscellaneous Utilities <https://github.com/TartanLlama/tl>`_
-
-Index
------
-
-.. toctree::
-
-  api/index
 
 License
 -------
