@@ -15,20 +15,20 @@ add_custom_command(OUTPUT ${SPHINX_INDEX_FILE}
   	WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
 	DEPENDS 
 		index.rst
-		api/apply.rst
-		api/casts.rst
-		api/decay_copy.rst
-		api/dependent_false.rst
+		api/misc/apply.rst
+		api/misc/casts.rst
+		api/misc/decay_copy.rst
+		api/misc/dependent_false.rst
 		api/expected.rst
 		api/function_ref.rst
-		api/index.rst
-		api/integer_sequence.rst
-		api/make_array.rst
-		api/numeric_aliases.rst
+		api/misc/index.rst
+		api/misc/integer_sequence.rst
+		api/misc/make_array.rst
+		api/misc/numeric_aliases.rst
 		api/optional.rst
-		api/overload.rst
-		api/type_traits.rst
-		api/typelist.rst
+		api/misc/overload.rst
+		api/misc/type_traits.rst
+		api/misc/typelist.rst
 	MAIN_DEPENDENCY ${SPHINX_SOURCE}/conf.py
 	COMMENT "Generating documentation with Sphinx")
 
