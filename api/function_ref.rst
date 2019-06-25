@@ -1,7 +1,7 @@
 function_ref
 ============
 
-`Source code <https://github.com/TartanLlama/function_ref/blob/master/function_ref.hpp>`_
+`Source code <https://github.com/TartanLlama/function_ref/blob/master/include/tl/function_ref.hpp>`_
 
 An implementation of `function_ref <https://wg21.link/P0792>`_.
 
