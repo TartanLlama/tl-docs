@@ -20,8 +20,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'tl libraries'
-copyright = '2019, Simon Brand'
-author = 'Simon Brand'
+copyright = '2019, Sy Brand'
+author = 'Sy Brand'
 
 # The short X.Y version
 version = ''
@@ -131,7 +131,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'tl.tex', 'tl Documentation',
-     'Simon Brand', 'manual'),
+     'Sy Brand', 'manual'),
 ]
 
 
