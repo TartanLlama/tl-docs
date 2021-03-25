@@ -197,12 +197,12 @@ C++11/14/17 `std::expected <https://wg21.link/p0323r3>`_ with functional-style e
     and returns the result wrapped in a `tl::expected<T, ResultType>`. 
     Otherwise returns `*this` (i.e. the expected value bubbles up).
 
-  .. function:: template<class F> optional<T> constexpr or_else(F &&f) &
-                template<class F> optional<T> constexpr or_else(F &&f) const &
-                template<class F> optional<T> constexpr or_else(F &&f) &&
-                template<class F> optional<T> constexpr or_else(F &&f) const &&
+  .. function:: template<class F> expected<T, E> constexpr or_else(F &&f) &
+                template<class F> expected<T, E> constexpr or_else(F &&f) const &
+                template<class F> expected<T, E> constexpr or_else(F &&f) &&
+                template<class F> expected<T, E> constexpr or_else(F &&f) const &&
 
-    If `*this` is in the unexpected state, calls `f` and returns the result. 
+    If `*this` is in the unexpected state, calls `f(this->error())` and returns the result. 
     Otherwise returns `*this`.
 
     *Requires*: `std::invoke_result_t<F>` must be `void` or convertible to `tl::expected<T,E>`.
@@ -341,4 +341,4 @@ Related Definitions
         
 .. var:: static constexpr tl::in_place_t tl::in_place
 
-  A tag to tell optional to construct its value in-place
+  A tag to tell expected to construct its value in-place
