@@ -20,24 +20,15 @@ ranges-compatible generator type built on C++20 coroutines.
 
     **Member Types**
 
-    .. class:: promise
+    .. class:: promise_type
+    .. class:: sentinel
+    .. class:: iterator
 
         **Member Types**
 
         .. type:: value_type = std::remove_reference_t<T>
         .. type:: reference_type = value_type&
         .. type:: pointer_type = value_type*
-
-    .. class:: sentinel
-    .. class:: iterator
-
-        **Member Types**
-
-        .. type:: promise_type = promise
-        .. type:: value_type = promise::value_type
-        .. type:: reference_type = promise::reference_type
-        .. type:: pointer_type = promise::pointer_type
-        .. type:: handle_type = std::coroutine_handle<promise>
         .. type:: difference_type = std::ptrdiff_t
 
         **Special Members**
@@ -51,15 +42,15 @@ ranges-compatible generator type built on C++20 coroutines.
 
             Coroutine handles point to a unique resource, so the iterators are not copyable.
 
-        .. function:: generator(generator&& rhs)
-                      generator& operator=(generator&& rhs) 
+        .. function:: iterator(generator&& rhs) noexcept
+                      iterator& operator=(generator&& rhs) noexcept 
 
             Takes the coroutine handle from `rhs`, making `rhs` not tied to a coroutine.
 
         
         **Member Functions**
 
-        .. function:: friend bool operator==(iterator const& it, sentinel)
+        .. function:: friend bool operator==(iterator const& it, sentinel) noexcept
 
             Returns `true` if the iterator has been moved from, or if the coroutine it is tied to has completed.
 
@@ -83,21 +74,16 @@ ranges-compatible generator type built on C++20 coroutines.
 
         Creates a generator which is not tied to a coroutine.
 
-    .. function:: generator(handle_type handle)
-
-        Creates a generator for the given coroutine handle.
-
     .. function:: generator(generator const&) = delete
                 generator& operator=(generator const&) = delete
 
         Coroutine handles point to a unique resource, so generators are not copyable.
 
-    .. function:: generator(generator&& rhs)
-                  generator& operator=(generator&& rhs) 
+    .. function:: generator(generator&& rhs) noexcept
+                  generator& operator=(generator&& rhs) noexcept 
 
         Takes the coroutine handle from `rhs`, making `rhs` not tied to a coroutine.
     
-
     **Member Functions**
 
     .. function:: iterator begin()
@@ -108,7 +94,8 @@ ranges-compatible generator type built on C++20 coroutines.
 
         Calling `begin` twice on the same generator is undefined behaviour.
 
-    .. function:: sentinel end()
+    .. function:: sentinel end() const noexcept
+    .. function:: void swap(generator& other) noexcept
 
 .. var:: template <class T> inline constexpr bool std::ranges::enable_view<tl::generator<T>> = true
 
