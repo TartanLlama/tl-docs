@@ -24,6 +24,7 @@ and discovery:
 - `optional <https://github.com/TartanLlama/optional>`_
 - `expected <https://github.com/TartanLlama/expected>`_
 - `function_ref <https://github.com/TartanLlama/function_ref>`_
+- `generator <https://github.com/TartanLlama/generator>`_
 - `Miscellaneous Utilities <https://github.com/TartanLlama/tl>`_
 
 License

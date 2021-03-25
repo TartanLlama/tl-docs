@@ -6,5 +6,6 @@ API Reference
 
    expected
    function_ref
+   generator
    optional
    misc/index
