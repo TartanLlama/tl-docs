@@ -8,4 +8,5 @@ API Reference
    function_ref
    generator
    optional
+   ranges
    misc/index
