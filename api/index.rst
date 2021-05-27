@@ -8,5 +8,5 @@ API Reference
    function_ref
    generator
    optional
-   ranges
+   ranges/index
    misc/index

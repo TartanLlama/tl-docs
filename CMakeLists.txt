@@ -29,6 +29,7 @@ add_custom_command(OUTPUT ${SPHINX_INDEX_FILE}
 		api/misc/numeric_aliases.rst
 		api/optional.rst
 		api/misc/overload.rst
+		api/ranges.rst
 		api/misc/type_traits.rst
 		api/misc/typelist.rst
 	MAIN_DEPENDENCY ${SPHINX_SOURCE}/conf.py
