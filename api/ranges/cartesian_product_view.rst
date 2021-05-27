@@ -28,7 +28,7 @@ A view representing the `cartesian product <https://en.wikipedia.org/wiki/Cartes
     - Otherwise, bidirectional if all `Vs` are bidirectional and common.
     - Otherwise, forward.
 
-    Sized: When all `Vs` are sized, in which case the product of their sizes.
+    Sized: When all `Vs` are sized, in which case the size is product of the sizes of the underlying ranges.
     
     Common: When all `Vs` are common, or when all `Vs` are random-access and sized.
 
