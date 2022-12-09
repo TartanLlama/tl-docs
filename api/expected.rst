@@ -113,17 +113,18 @@ C++11/14/17 `std::expected <https://wg21.link/p0323r3>`_ with functional-style e
     .. function:: constexpr T* operator->()
                   constexpr T const* operator->() const
 
-        Returns a pointer to the expected value. Undefined behaviour
-        if `*this` is in the unexpected state. Use :func:`tl::expected::value`
-        for checked value retrieval.
+        Returns a pointer to the expected value. Undefined behaviour (implemented
+        as an assertion failure) if `*this` is in the unexpected state. Use
+        :func:`tl::expected::value` for checked value retrieval.
 
     .. function:: constexpr T & operator*() &
                   constexpr T const & operator*() const &
                   constexpr T && operator*() &&
                   constexpr T const && operator*() const &&
 
-        Returns the expected value. Undefined behaviour if `*this` is in the unexpected
-        state. Use :func:`tl::expected::value` for checked value retrieval.
+        Returns the expected value. Undefined behaviour (implemented as an
+        assertion failure) if `*this` is in the unexpected state. Use
+        :func:`tl::expected::value` for checked value retrieval.
 
     .. function:: constexpr T & value() &
                   constexpr T const & value() const &
@@ -139,8 +140,8 @@ C++11/14/17 `std::expected <https://wg21.link/p0323r3>`_ with functional-style e
                   constexpr E const && error() const &&
     
         If `*this` is in the unexpected state, returns the unexpected value.
-        Undefined behaviour if `*this` is in the expected state. 
-        Use :func:`tl::expected::has_value` or 
+        Undefined behaviour (implemented as an assertion failure) if `*this`
+        is in the expected state. Use :func:`tl::expected::has_value` or
         :func:`tl::expected::operator bool` to check the state before
         calling.
 
